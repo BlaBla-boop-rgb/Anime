@@ -1,0 +1,23 @@
+{
+	"key.category.animecosmetics.main": "Anime Cosmetics",
+	"key.animecosmetics.skin": "Toggle anime skin",
+	"key.animecosmetics.wings": "Toggle wings",
+	"key.animecosmetics.cape": "Toggle cape",
+	"animecosmetics.feature.skin": "Anime skin",
+	"animecosmetics.feature.wings": "Wings",
+	"animecosmetics.feature.cape": "Cape",
+	"animecosmetics.state.on": "ON",
+	"animecosmetics.state.off": "OFF",
+	"key.animecosmetics.feathers": "Toggle outer wings",
+	"animecosmetics.feature.feathers": "Outer wings",
+	"key.animecosmetics.sky": "Toggle crimson sky",
+	"animecosmetics.feature.sky": "Crimson sky",
+	"key.animecosmetics.sun_eye": "Toggle sun eye",
+	"animecosmetics.feature.sun_eye": "Sun eye",
+	"key.animecosmetics.rift": "Toggle Rift Eye",
+	"animecosmetics.feature.rift": "Rift Eye",
+	"key.animecosmetics.rift_sky": "Toggle Vortex Sky",
+	"animecosmetics.feature.rift_sky": "Vortex Sky",
+	"subtitles.animecosmetics.authority_open": "The rift tears open",
+	"subtitles.animecosmetics.authority_close": "The rift closes"
+}

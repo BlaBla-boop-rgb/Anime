@@ -1,0 +1,23 @@
+{
+	"key.category.animecosmetics.main": "Anime Cosmetics",
+	"key.animecosmetics.skin": "Anime-Skin umschalten",
+	"key.animecosmetics.wings": "Flügel umschalten",
+	"key.animecosmetics.cape": "Umhang umschalten",
+	"animecosmetics.feature.skin": "Anime-Skin",
+	"animecosmetics.feature.wings": "Flügel",
+	"animecosmetics.feature.cape": "Umhang",
+	"animecosmetics.state.on": "AN",
+	"animecosmetics.state.off": "AUS",
+	"key.animecosmetics.feathers": "Äußere Flügel umschalten",
+	"animecosmetics.feature.feathers": "Äußere Flügel",
+	"key.animecosmetics.sky": "Roten Himmel umschalten",
+	"animecosmetics.feature.sky": "Roter Himmel",
+	"key.animecosmetics.sun_eye": "Sonnen-Auge umschalten",
+	"animecosmetics.feature.sun_eye": "Sonnen-Auge",
+	"key.animecosmetics.rift": "Riss-Auge umschalten",
+	"animecosmetics.feature.rift": "Riss-Auge",
+	"key.animecosmetics.rift_sky": "Wirbelhimmel umschalten",
+	"animecosmetics.feature.rift_sky": "Wirbelhimmel",
+	"subtitles.animecosmetics.authority_open": "Der Riss bricht auf",
+	"subtitles.animecosmetics.authority_close": "Der Riss schließt sich"
+}
