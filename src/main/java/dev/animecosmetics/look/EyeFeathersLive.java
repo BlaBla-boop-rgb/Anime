@@ -74,7 +74,6 @@ public final class EyeFeathersLive {
             img.close();
             EyeFeathersLive.Cells[] out = new EyeFeathersLive.Cells[atlas.count()];
 
-            label78:
             for (int f = 0; f < out.length; f++) {
                int[][] fc = atlas.frameCells(f);
                int[][] lc = atlas.liveCells(f);
@@ -82,29 +81,23 @@ public final class EyeFeathersLive {
                c.w = fc[0][2] - fc[0][0];
                c.h = fc[0][3] - fc[0][1];
                c.frames = new int[fc.length][c.w * c.h];
-               int k = 0;
 
-               while (k < fc.length) {
+               for (int k = 0; k < fc.length; k++) {
                   for (int j = 0; j < c.h; j++) {
                      System.arraycopy(px, (fc[k][1] + j) * aw + fc[k][0], c.frames[k], j * c.w, c.w);
                   }
-
-                  k++;
-                  continue;
-
-                  c.live = new int[][]{{lc[0][0], lc[0][1]}, {lc[1][0], lc[1][1]}};
-                  c.buf = new NativeImage[2][2];
-
-                  for (int side = 0; side < 2; side++) {
-                     for (int b = 0; b < 2; b++) {
-                        c.buf[side][b] = new NativeImage(c.w, c.h, false);
-                     }
-                  }
-
-                  out[f] = c;
-                  continue label78;
                }
-               break;
+
+               c.live = new int[][]{{lc[0][0], lc[0][1]}, {lc[1][0], lc[1][1]}};
+               c.buf = new NativeImage[2][2];
+
+               for (int side = 0; side < 2; side++) {
+                  for (int b = 0; b < 2; b++) {
+                     c.buf[side][b] = new NativeImage(c.w, c.h, false);
+                  }
+               }
+
+               out[f] = c;
             }
 
             this.fps = atlas.fps();
