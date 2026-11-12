@@ -24,7 +24,7 @@ public abstract class SubmitNodeCollectionMixin {
    private static boolean animecosmetics$noOit(SubmitNodeCollection self, RenderType type) {
       return animecosmetics$oitMode(self)
          && !type.isOutline()
-         && ((RenderSetupAccessor)((RenderTypeAccessor)type).animecosmetics$state()).animecosmetics$oit() == null;
+         && ((RenderSetupAccessor)(Object)((RenderTypeAccessor)type).animecosmetics$state()).animecosmetics$oit() == null;
    }
 
    @Inject(
@@ -33,7 +33,7 @@ public abstract class SubmitNodeCollectionMixin {
       cancellable = true
    )
    private void animecosmetics$lateGlow(PoseStack poseStack, RenderType renderType, CustomGeometryRenderer renderer, CallbackInfo ci) {
-      SubmitNodeCollection self = (SubmitNodeCollection)this;
+      SubmitNodeCollection self = (SubmitNodeCollection)(Object)this;
       if (animecosmetics$noOit(self, renderType)) {
          self.solid.submit(new Submit(poseStack.last().copy(), renderType, renderer));
          ci.cancel();
